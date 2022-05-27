@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=PT+Sans:ital@1&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;    
+
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #CDC2AE;
+    padding: 0 10px;
+}
+.link{
+    text-decoration: none;
+    color: #F0F8FF;
+}
+.profile{
+    border: transparent 1px solid;
+    border-radius: 100px;
+}
+hr{
+    margin: 10px 0;
+    
+}
+.content{
+    display: flex;
+    background-color: #ECE5C7;
+    justify-content: space-between;
+}
+.list-itm{
+    padding: 0 2%;
+}
+.inline-block{
+    display: block;
+}
+.right{
+    padding-left: 15px;
+    background-color: #D0C9C0;
+    width: 30vw;
+}
+.left{
+    padding-left: 15px;
+}
+
+
+@media screen and (max-width: 1024px) { 
+    .nav{
+        flex-direction: row;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .right{
+        width: auto;
+    }
+    
+}
