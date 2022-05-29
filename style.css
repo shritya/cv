@@ -6,32 +6,33 @@
 }
 body{
     font-family: 'PT Sans', sans-serif;
+    background-color: #000;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #CDC2AE;
+    background-color: #000;
     padding: 0 10px;
+    color: white;
 }
+
 .link{
     text-decoration: none;
-    color: #F0F8FF;
+    color: white;
 }
 .profile{
     border: transparent 1px solid;
     border-radius: 100px;
 }
-hr{
-    margin: 10px 0;
-    
-}
+
 .content{
     display: flex;
-    background-color: #ECE5C7;
-    justify-content: space-between;
+    background-color: black;
+    justify-content: space-around;  
 }
 .list-itm{
+    /* visibility: hidden; */
     padding: 0 2%;
 }
 .inline-block{
@@ -39,23 +40,122 @@ hr{
 }
 .right{
     padding-left: 15px;
-    background-color: #D0C9C0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
     width: 30vw;
 }
+.right-one{
+    background-color: #1DB9C3;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+
 .left{
     padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 30vw;
 }
 
+.left-one{
+    
+    padding: 5px;
+    background-color: #FDB9FC;
+    margin-bottom: 20px;
+}
 
-@media screen and (max-width: 1024px) { 
+.left-two{
+    padding: 10px 15px;
+    background-color: #E8F9FD;
+    margin-bottom: 20px;
+
+}
+
+.left-three{
+    background-color: #C2FFD9;
+    padding: 10px 15px;
+
+}
+
+.link:hover{
+    color: blue;
+}
+li:hover{
+    color: black;
+}
+
+@media screen and (max-width: 1024px){ 
     .nav{
-        flex-direction: row;
     }
     .content{
+        font-size: small;
         flex-direction: column;
+        row-gap: 20px;
     }
     .right{
+        padding: 0 15px ;
         width: auto;
+        flex-direction: column;
+    }
+    .left{
+        padding: 0 15px ;
+
+        width: auto;
+        flex-direction: column;
+        display: block;
     }
     
+    
 }
+@media screen and (min-width: 1024px){
+    li:hover{
+        color: #F806CC;
+    }
+    .left-three:hover{
+        border: 8px yellow solid;
+        border-radius: 5px;
+    
+        padding: 40px;
+        transition: 500ms;
+        transition-delay: 50ms;
+        display: flexbox;
+        justify-items: center;
+    }
+    .left-two:hover{
+        border: 8px yellow solid;
+        border-radius: 5px;
+    
+        padding: 30px;
+        transition: 500ms;
+        transition-delay: 50ms;
+        display: flexbox;
+        justify-items: center;
+    }
+    .left-one:hover{
+        border: 8px yellow solid;
+        border-radius: 5px;
+        padding: 25px;
+        transition: 500ms;
+        transition-delay: 50ms;
+        display: flexbox;
+        justify-items: center;
+    }
+    .right-one:hover{
+        border: 8px yellow solid;
+        border-radius: 5px;
+    
+        padding: 25px 35px;
+        transition: 500ms;
+        transition-delay: 50ms;
+        display: flexbox;
+        justify-items: center;
+    }
+    nav:hover{
+        padding: 150px;
+        transition: 1000ms;
+        flex-direction: column-reverse;
+        row-gap: 10px;
+    }
+} 
