@@ -67,6 +67,12 @@ nav{
     background-color: #FDB9FC;
     margin-bottom: 20px;
 }
+.gh-link {
+  display: block;
+  font-size: large;
+  color: black;
+}
+
 
 .left-two{
     border-radius: 5px;
