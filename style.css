@@ -132,6 +132,7 @@ li {
 
 @media screen and (max-width: 1024px) {
   header {
+    margin-top: 5px;
     width: 100%;
   }
   header nav h1 {
