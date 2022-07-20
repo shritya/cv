@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #000;
@@ -22,6 +23,7 @@ nav {
 }
 
 .link {
+  font-size: 16px;
   text-decoration: none;
   color: white;
 }
@@ -45,7 +47,7 @@ nav {
   display: block;
 }
 .right {
-    align-items: flex-end;
+  align-items: flex-end;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
@@ -55,9 +57,9 @@ nav {
 .right-one {
   background-color: #1db9c3;
   border-radius: 5px;
-  max-width: 603px;
-    
-  padding: 10px 20px;
+  max-width: 557px;
+
+  padding: 10px 12px;
   margin-bottom: 5px;
 }
 
@@ -72,69 +74,78 @@ nav {
 .left-one {
   border-radius: 5px;
   padding: 5px 12px;
-
-  max-width: 603px;
-
+  max-width: 557px;
   background-color: #fdb9fc;
   margin-bottom: 20px;
 }
-.gh-link {
-  display: block;
-  font-size: large;
-  color: black;
-}
+
 
 .left-two {
   border-radius: 5px;
   padding: 5px 12px;
-  
-  max-width: 603px;
-
+  max-width: 557px;
   background-color: #e8f9fd;
   margin-bottom: 20px;
 }
 
 .left-three {
   border-radius: 5px;
-  padding: 5px 12px;
+  /* padding: 5px 12px; */
   background-color: #c2ffd9;
-  max-width: 603px;
-  
-  /* padding: 10px 15px; */
+  max-width: 581px;
   text-align: center;
-  /* width: 50px; */
+}
+.left-three span {
+  font-size: 24px;
 }
 .left-three table tr td {
-  padding: 5px;
-  border: 1px inset black;
+  border: 1px inset grey;
 }
-.left-three table tr th{
-    border: 1px inset black;
+.left-three table tr th {
+  border: 1px inset grey;
   padding: 5px;
-
 }
 
 table {
   margin: auto;
-  border: 2px solid black;
+  width: 100%;
+  border: 2px solid lightslategray;
   /* width: 50px; */
 }
-h3 {
-  color: #301b3f;
-}
+
 
 .link:hover {
-  color: blue;
+  color: firebrick;
 }
 li {
   text-decoration: none;
 }
-
+span {
+  font-size: 20px;
+}
+footer{
+    /* border-top: 1px solid white ; */
+    padding: 10px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+.gh-link {
+    /* display: block; */
+    font-size: large;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+  }
 @media screen and (max-width: 1024px) {
   header {
     margin-top: 5px;
     width: 100%;
   }
+  /* header nav h1 {
+    font-size: 15px;
+  } */
   .content {
     width: 100%;
     font-size: small;
@@ -145,13 +156,11 @@ li {
     padding: 5px;
     width: auto;
     align-items: flex-start;
-
     flex-direction: column;
   }
 
   .left {
-    padding: 0 15px;
-
+    padding: 5px;
     width: auto;
     flex-direction: column;
     display: block;
@@ -160,29 +169,35 @@ li {
     padding: 3px;
     border: 1px inset black;
   }
-  .left-three table tr th{
+  .left-three table tr th {
     border: 1px inset black;
-  padding: 5px;
-
-}
+    padding: 5px;
+  }
 }
 @media screen and (min-width: 1024px) {
   li:hover {
     color: firebrick;
   }
-  /* .left-three:hover {
-    border: 8px yellow solid;
+  .left-three tr :hover {
+    border: 1px solid white;
+  }
+  .left-three:hover {
+    border: 8px black solid;
     border-radius: 5px;
+    background-color: black;
+    color: white;
 
     padding: 40px;
     transition: 500ms;
     transition-delay: 50ms;
     display: flexbox;
     justify-items: center;
-  } */
+  }
   .left-two:hover {
-    border: 8px yellow solid;
+    border: 8px black solid;
     border-radius: 5px;
+    background-color: black;
+    color: white;
 
     padding: 30px;
     transition: 500ms;
@@ -191,8 +206,10 @@ li {
     justify-items: center;
   }
   .left-one:hover {
-    border: 8px yellow solid;
+    border: 8px black solid;
     border-radius: 5px;
+    background-color: black;
+    color: white;
     padding: 25px;
     transition: 500ms;
     transition-delay: 50ms;
@@ -200,8 +217,10 @@ li {
     justify-items: center;
   }
   .right-one:hover {
-    border: 8px yellow solid;
+    border: 8px black solid;
     border-radius: 5px;
+    background-color: black;
+    color: white;
 
     padding: 25px 35px;
     transition: 500ms;
@@ -210,10 +229,15 @@ li {
     justify-items: center;
   }
   nav:hover {
-    padding: 150px;
+    /* color: firebrick;  */
+    padding: 70px;
     transition: 1000ms;
-    animation: backwards;
+    /* background-color: snow; */
     flex-direction: column-reverse;
     row-gap: 10px;
+  }
+ 
+  .gh-link:hover{
+    color: firebrick;
   }
 }
