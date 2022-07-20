@@ -1,136 +1,243 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon" />
-    <title>Shritej Kumbhar</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <h1>
-          Shritej Kumbhar
-          <span class="inline-block"
-            ><a class="link" href="https://www.linkedin.com/in/shritejkumbhar/"
-              >Linkedin</a
-            >
-            <a class="link" href="https://instagram.com/shritejkumbhar_/">Instagram</a>
-            </span
-          >
-        </h1>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&family=PT+Sans:ital@1&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 
-        <img src="./Assets/shritej-profile.jpg" alt="Profile" class="profile" />
-        
-      </nav>
-    </header>
-    <section class="content">
-      <div class="left">
-        <div class="left-one">
-          <span>Objective</span>
-          <p>To Become Skilled coder and acquire knowledge & proficency over Full Stack Coding and Contribute my knowledge</p>
-          
-        </div>
-        <div class="left-two">
-          <span>Skills</span>
-          <ul class="list-itm">
-            <li>Social Media Strategies</li>
-            <li>Building and running campaigns</li>
-            <li>Data collection</li>
-            <li>Good knowledge about Html and CSS</li>
-          </ul>
-        </div>
-        <div class="left-three">
-          <span> Academics </span>
-          <table>
-            <tr>
-              <th>Course</th>
-              <th>Name Of Institute</th>
-              <th>Year</th>
-              <th>%</th>
-            </tr>
-            <tr>
-              <td>SSC</td>
-              <td>PVG's Muktangan</td>
-              <td>2018</td>
-              <td>64</td>
-            </tr>
-            <tr>
-              <td>HSC (Science)</td>
-              <td>PVG's Muktangan Jr. College</td>
-              <td>2020</td>
-              <td>48</td>
-            </tr>
-            <tr>
-              <td>B.Sc (CS) (SPPU Pune)</td>
-              <td>PVG College Of Science</td>
-              <td>2021</td>
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+}
+header {
+  width: 80%;
+  margin: auto;
+}
+nav {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 10px 15px;
+  color: white;
+}
 
-              <td>FY CGPA 7.50</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>2022</td>
-              <td>SY CGPA First sem 8.36</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="right">
-        <div class="right-one">
-          <span>Experince</span>
+.link {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+.profile {
+  border: transparent 1px solid;
+  border-radius: 100px;
+}
 
-          <h4>
-            CricStox (July 21 - Present)
-            <span class="inline-block">Marketing Intern</span>
-          </h4>
-          <!-- <p>     -->
-          <ul class="list-itm">
-            <li>
-              Collected data about Web3 enthusiasts, which were their social
-              handles, City they are currently living for Marketing.
-            </li>
-            <li>Contributed helping In-app loyalty Program</li>
-            <li>
-              Collected data about people who attended an event of NFT in pune
-              by their wallet addresses and Twitter accounts.
-            </li>
-            <li>
-              Created an Discord event for Nft give aways which was named as
-              CricStox Fantasy League.
-            </li>
-            <li>
-              Handled social media accounts and posted content on Socials.
-            </li>
-            <li>
-              Finded bugs and gave valuable suggestions for In-app changes.
-            </li>
-            <li>
-              Targeted user on platforms like Quora and Instagram with non
-              official accounts resulting about 2000 downloads in a month (As
-              the Head told).
-            </li>
-            <li>
-              Have good information with Discord and other community platforms.
-            </li>
-            <li>
-              Have made good strategies to get more engagement on social media.
-            </li>
-          </ul>
-          <!-- </p> -->
-        </div>
-      </div>
-    </section>
-    <footer>
-        <h3>
-            My Other Links
-        </h3>
-        <a href="https://shritya.github.io/hornclaw/" class="gh-link">HornClaw</a>
-        <a href="https://shritya.github.io/yomer/" class="gh-link">Yomer</a>
-        <a href="https://shritya.github.io/cricstox/" class="gh-link">CricStox</a>
-    </footer>
-  </body>
-</html>
+.content {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  background-color: black;
+  justify-content: space-between;
+}
+.list-itm {
+  /* visibility: hidden; */
+  padding: 0 2%;
+}
+.inline-block {
+  display: block;
+}
+.right {
+  align-items: flex-end;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 30vw;
+}
+.right-one {
+  background-color: #1db9c3;
+  border-radius: 5px;
+  max-width: 557px;
+
+  padding: 10px 12px;
+  margin-bottom: 5px;
+}
+
+.left {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 30vw;
+}
+
+.left-one {
+  border-radius: 5px;
+  padding: 5px 12px;
+  max-width: 557px;
+  background-color: #fdb9fc;
+  margin-bottom: 20px;
+}
+
+
+.left-two {
+  border-radius: 5px;
+  padding: 5px 12px;
+  max-width: 557px;
+  background-color: #e8f9fd;
+  margin-bottom: 20px;
+}
+
+.left-three {
+  border-radius: 5px;
+  /* padding: 5px 12px; */
+  background-color: #c2ffd9;
+  max-width: 581px;
+  text-align: center;
+}
+.left-three span {
+  font-size: 24px;
+}
+.left-three table tr td {
+  border: 1px inset grey;
+}
+.left-three table tr th {
+  border: 1px inset grey;
+  padding: 5px;
+}
+
+table {
+  margin: auto;
+  width: 100%;
+  border: 2px solid lightslategray;
+  /* width: 50px; */
+}
+
+
+.link:hover {
+  color: firebrick;
+}
+li {
+  text-decoration: none;
+}
+span {
+  font-size: 20px;
+}
+footer{
+    /* border-top: 1px solid white ; */
+    padding: 10px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+.gh-link {
+    /* display: block; */
+    font-size: large;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+  }
+@media screen and (max-width: 1024px) {
+  header {
+    margin-top: 5px;
+    width: 100%;
+  }
+  /* header nav h1 {
+    font-size: 15px;
+  } */
+  .content {
+    width: 100%;
+    font-size: small;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .right {
+    padding: 5px;
+    width: auto;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 5px;
+    width: auto;
+    flex-direction: column;
+    display: block;
+  }
+  .left-three table tr td {
+    padding: 3px;
+    border: 1px inset black;
+  }
+  .left-three table tr th {
+    border: 1px inset black;
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  li:hover {
+    color: firebrick;
+  }
+  .left-three tr :hover {
+    border: 1px solid white;
+  }
+  .left-three:hover {
+    border: 8px black solid;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+
+    padding: 40px;
+    transition: 500ms;
+    transition-delay: 50ms;
+    display: flexbox;
+    justify-items: center;
+  }
+  .left-two:hover {
+    border: 8px black solid;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+
+    padding: 30px;
+    transition: 500ms;
+    transition-delay: 50ms;
+    display: flexbox;
+    justify-items: center;
+  }
+  .left-one:hover {
+    border: 8px black solid;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 25px;
+    transition: 500ms;
+    transition-delay: 50ms;
+    display: flexbox;
+    justify-items: center;
+  }
+  .right-one:hover {
+    border: 8px black solid;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+
+    padding: 25px 35px;
+    transition: 500ms;
+    transition-delay: 50ms;
+    display: flexbox;
+    justify-items: center;
+  }
+  nav:hover {
+    /* color: firebrick;  */
+    padding: 70px;
+    transition: 1000ms;
+    /* background-color: snow; */
+    flex-direction: column-reverse;
+    row-gap: 10px;
+  }
+ 
+  .gh-link:hover{
+    color: firebrick;
+  }
+}
