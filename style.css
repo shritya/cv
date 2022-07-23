@@ -159,16 +159,16 @@ footer{
     flex-direction: column;
   }
   .left-one{
-    margin: auto;
+    margin: 0 auto 10px auto;
   }
   .left-two{
-    margin: auto;
+    margin: 0 auto 10px auto;
   }
   .left-three{
-    margin: auto;
+    margin: 0 auto 10px auto;
   }
   .right-one{
-    margin: auto;
+    margin: 0 auto 10px auto;
   }
   .left {
     padding: 5px;
