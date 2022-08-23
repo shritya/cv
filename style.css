@@ -30,6 +30,7 @@ nav {
 .profile {
   border: transparent 1px solid;
   border-radius: 100px;
+  height: 100px
 }
 
 .content {
